@@ -1,6 +1,6 @@
 ﻿namespace Software_development_Assignment_quiz
 {
-    partial class Form1
+    partial class Homepage
     {
         /// <summary>
         ///  Required designer variable.
@@ -41,7 +41,7 @@
             label1.Size = new Size(1208, 50);
             label1.TabIndex = 0;
             label1.Text = "Welcome to the quiz game get as many questions as you can correct";
-            label1.Click += label1_Click;
+            label1.Click += Label1_Click;
             // 
             // btnStart
             // 
@@ -53,15 +53,16 @@
             btnStart.UseVisualStyleBackColor = true;
             btnStart.Click += btnStart_Click;
             // 
-            // Form1
+            // Homepage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1258, 717);
             Controls.Add(btnStart);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "Homepage";
+            Text = "Homepage";
+            Load += Homepage_Load;
             ResumeLayout(false);
             PerformLayout();
         }

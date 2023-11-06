@@ -2,23 +2,28 @@ using System.Runtime.CompilerServices;
 
 namespace Software_development_Assignment_quiz
 {
-    public partial class Form1 : Form
+    public partial class Homepage : Form
     {
-        public Form1()
+        public Homepage()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
-            
+
         }
-        
+
         private void btnStart_Click(object sender, EventArgs e)
         {
-            Question_1 Q1 = new Question_1();
-                Q1.Show();
-            
+            this.Hide();
+            Question1 Q1 = new Question1();
+            Q1.Show();
+
+        }
+
+        private void Homepage_Load(object sender, EventArgs e)
+        {
         }
     }
 }
