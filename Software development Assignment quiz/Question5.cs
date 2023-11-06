@@ -44,12 +44,6 @@ namespace Software_development_Assignment_quiz
             }
 
 
-            else if (txtBoxEntry.Text.Contains("Lympstone Commando"))
-            {
-                lblCorrectOrWrongEntry.Text = "The answer is correct";
-            }
-
-            else if (txtBoxEntry.Text.Contains("lympstone commando"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
             }

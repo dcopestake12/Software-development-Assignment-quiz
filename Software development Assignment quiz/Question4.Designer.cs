@@ -72,7 +72,6 @@
             btnOption1.Name = "btnOption1";
             btnOption1.Size = new Size(118, 61);
             btnOption1.TabIndex = 3;
-            btnOption1.Text = "Where the military ask you to work a at a certain place such as a war zone.";
             btnOption1.UseVisualStyleBackColor = true;
             btnOption1.Click += btnOption1_Click;
             // 

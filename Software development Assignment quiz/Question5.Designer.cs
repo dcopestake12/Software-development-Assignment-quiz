@@ -42,7 +42,6 @@
             label1.Name = "label1";
             label1.Size = new Size(329, 15);
             label1.TabIndex = 0;
-            label1.Text = "Which milatry base is close to exeter and is located in Devon?";
             // 
             // btnQuestion5
             // 
@@ -92,6 +91,7 @@
             Controls.Add(btnQuestion5);
             Controls.Add(label1);
             Name = "Question5";
+            Text = "Question5";
             Load += Question5_Load;
             ResumeLayout(false);
             PerformLayout();

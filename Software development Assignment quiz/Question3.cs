@@ -47,7 +47,7 @@ namespace Software_development_Assignment_quiz
             btnOption2.Enabled = false;
             btnOption3.Enabled = false;
             btnOption4.Enabled = false;
-
+            
         }
 
         private void btnOption2_Click(object sender, EventArgs e)
