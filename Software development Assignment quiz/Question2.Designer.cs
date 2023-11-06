@@ -50,7 +50,8 @@
             label1.AutoSize = true;
             label1.Location = new Point(187, 105);
             label1.Name = "label1";
-            label1.Size = new Size(173, 15);
+            Size size = new Size(173, 15);
+            label1.Size = size;
             label1.TabIndex = 1;
             label1.Text = "Who is the minister of defence?";
             label1.Click += label1_Click;
