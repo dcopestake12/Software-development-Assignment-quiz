@@ -82,8 +82,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(332, 121);
             label1.Name = "label1";
-            label1.Size = new Size(194, 15);
+            label1.Size = new Size(203, 15);
             label1.TabIndex = 4;
+            label1.Text = "When waws the british army formed?";
             label1.Click += label1_Click;
             // 
             // btnQuestion1
