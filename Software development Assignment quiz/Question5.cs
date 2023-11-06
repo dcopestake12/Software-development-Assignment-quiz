@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,53 +10,46 @@ using System.Windows.Forms;
 
 namespace Software_development_Assignment_quiz
 {
-    public partial class Question2 : Form
+    public partial class Question5 : Form
     {
-        public Question2()
+        public Question5()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnQuestion5_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Question3 Q3 = new Question3();
-            Q3.Show();
+            Application.Exit();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Question5_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtBoxEntry_TextChanged(object sender, EventArgs e)
-        {
-
 
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            //This disables button and textbox when submit button is clicked.
             txtBoxEntry.Enabled = false;
             btnSubmit.Enabled = false;
 
-            //This checks that the users input matches up with these statements else the answer is wrong.
-            if (txtBoxEntry.Text.Contains("Grant Shapps"))
+            if (txtBoxEntry.Text.Contains("Lympstone"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
             }
 
-            else if (txtBoxEntry.Text.Contains("grant shapps"))
-            {
-                lblCorrectOrWrongEntry.Text = "The answer is correct";
-            }
-            else if (txtBoxEntry.Text.Contains("The minister of defence is Grant Shapps"))
+
+            else if (txtBoxEntry.Text.Contains("lympstone"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
             }
 
-            else if (txtBoxEntry.Text.Contains("The minister of defence is grant shapps"))
+
+            else if (txtBoxEntry.Text.Contains("Lympstone Commando"))
+            {
+                lblCorrectOrWrongEntry.Text = "The answer is correct";
+            }
+
+            else if (txtBoxEntry.Text.Contains("lympstone commando"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
             }
@@ -68,9 +60,10 @@ namespace Software_development_Assignment_quiz
             }
         }
 
-        private void lblCorrectOrWrongEntry_Click(object sender, EventArgs e)
+        private void txtBoxEntry_TextChanged(object sender, EventArgs e)
         {
 
         }
     }
 }
+
