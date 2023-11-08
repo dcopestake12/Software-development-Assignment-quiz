@@ -16,5 +16,37 @@ namespace Software_development_Assignment_quiz
         {
             InitializeComponent();
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            if (txtBoxEntry.Text.Contains("Grant Shapps"))
+            {
+                lblCorrectOrWrong.Text = "The answer is correct";
+            }
+
+
+            else if (txtBoxEntry.Text.Contains("grant shapps"))
+            {
+                lblCorrectOrWrong.Text = "The answer is correct";
+            }
+
+            else if (txtBoxEntry.Text.Contains("grantshapps"))
+            {
+                lblCorrectOrWrong.Text = "The answer is correct";
+            }
+
+            else
+            {
+                lblCorrectOrWrong.Text = "The answer is wrong";
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Question3 Q3 = new Question3();
+            Q3.Show();
+        }
     }
 }
+

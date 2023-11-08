@@ -40,7 +40,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(218, 81);
+            label1.Location = new Point(313, 82);
             label1.Name = "label1";
             label1.Size = new Size(161, 15);
             label1.TabIndex = 0;
@@ -70,8 +70,9 @@
             // 
             btnOption1.Location = new Point(218, 156);
             btnOption1.Name = "btnOption1";
-            btnOption1.Size = new Size(118, 61);
+            btnOption1.Size = new Size(161, 61);
             btnOption1.TabIndex = 3;
+            btnOption1.Text = "Training that you must complete when nyou join the milatry.";
             btnOption1.UseVisualStyleBackColor = true;
             btnOption1.Click += btnOption1_Click;
             // 
@@ -79,9 +80,9 @@
             // 
             btnOption3.Location = new Point(218, 267);
             btnOption3.Name = "btnOption3";
-            btnOption3.Size = new Size(75, 23);
+            btnOption3.Size = new Size(172, 43);
             btnOption3.TabIndex = 4;
-            btnOption3.Text = "button1";
+            btnOption3.Text = "There is no such thing as a draft.";
             btnOption3.UseVisualStyleBackColor = true;
             btnOption3.Click += btnOption3_Click;
             // 
@@ -89,16 +90,16 @@
             // 
             btnOption4.Location = new Point(442, 267);
             btnOption4.Name = "btnOption4";
-            btnOption4.Size = new Size(75, 23);
+            btnOption4.Size = new Size(194, 43);
             btnOption4.TabIndex = 5;
-            btnOption4.Text = "button2";
+            btnOption4.Text = "When you forced to complete certain tasks.";
             btnOption4.UseVisualStyleBackColor = true;
             btnOption4.Click += btnOption4_Click;
             // 
             // lblCorrectOrWrong
             // 
             lblCorrectOrWrong.AutoSize = true;
-            lblCorrectOrWrong.Location = new Point(330, 417);
+            lblCorrectOrWrong.Location = new Point(341, 408);
             lblCorrectOrWrong.Name = "lblCorrectOrWrong";
             lblCorrectOrWrong.Size = new Size(38, 15);
             lblCorrectOrWrong.TabIndex = 6;

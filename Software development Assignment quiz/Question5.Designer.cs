@@ -33,6 +33,7 @@
             txtBoxEntry = new TextBox();
             btnSubmit = new Button();
             lblCorrectOrWrongEntry = new Label();
+            lblQuestion = new Label();
             SuspendLayout();
             // 
             // label1
@@ -40,7 +41,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(212, 93);
             label1.Name = "label1";
-            label1.Size = new Size(329, 15);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 0;
             // 
             // btnQuestion5
@@ -76,15 +77,24 @@
             lblCorrectOrWrongEntry.AutoSize = true;
             lblCorrectOrWrongEntry.Location = new Point(329, 399);
             lblCorrectOrWrongEntry.Name = "lblCorrectOrWrongEntry";
-            lblCorrectOrWrongEntry.Size = new Size(38, 15);
+            lblCorrectOrWrongEntry.Size = new Size(0, 15);
             lblCorrectOrWrongEntry.TabIndex = 4;
-            lblCorrectOrWrongEntry.Text = "label2";
+            // 
+            // lblQuestion
+            // 
+            lblQuestion.AutoSize = true;
+            lblQuestion.Location = new Point(212, 112);
+            lblQuestion.Name = "lblQuestion";
+            lblQuestion.Size = new Size(358, 15);
+            lblQuestion.TabIndex = 5;
+            lblQuestion.Text = "What is the name of the milatry base located in Devon near Exeter?";
             // 
             // Question5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblQuestion);
             Controls.Add(lblCorrectOrWrongEntry);
             Controls.Add(btnSubmit);
             Controls.Add(txtBoxEntry);
@@ -104,5 +114,6 @@
         private TextBox txtBoxEntry;
         private Button btnSubmit;
         private Label lblCorrectOrWrongEntry;
+        private Label lblQuestion;
     }
 }
