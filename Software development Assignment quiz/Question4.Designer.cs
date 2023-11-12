@@ -64,7 +64,7 @@
             btnOption2.TabIndex = 2;
             btnOption2.Text = "Where the military ask you to work a at a certain place such as a war zone.";
             btnOption2.UseVisualStyleBackColor = true;
-            btnOption2.Click += button1_Click;
+            btnOption2.Click += btnOption2_Click;
             // 
             // btnOption1
             // 
@@ -101,9 +101,8 @@
             lblCorrectOrWrong.AutoSize = true;
             lblCorrectOrWrong.Location = new Point(341, 408);
             lblCorrectOrWrong.Name = "lblCorrectOrWrong";
-            lblCorrectOrWrong.Size = new Size(38, 15);
+            lblCorrectOrWrong.Size = new Size(0, 15);
             lblCorrectOrWrong.TabIndex = 6;
-            lblCorrectOrWrong.Text = "label2";
             // 
             // Question4
             // 

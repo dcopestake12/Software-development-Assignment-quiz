@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_development_Assignment_quiz.Homepage;
 
 namespace Software_development_Assignment_quiz
 {
@@ -47,7 +48,9 @@ namespace Software_development_Assignment_quiz
             btnOption2.Enabled = false;
             btnOption3.Enabled = false;
             btnOption4.Enabled = false;
-            
+            //Adds 1 to the score
+            score.currentScore += 1;
+
         }
 
         private void btnOption2_Click(object sender, EventArgs e)

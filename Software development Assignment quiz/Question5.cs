@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Software_development_Assignment_quiz.Homepage;
 
 namespace Software_development_Assignment_quiz
 {
@@ -19,7 +20,12 @@ namespace Software_development_Assignment_quiz
 
         private void btnQuestion5_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+            // Closes the current form thats open
+            this.Hide();
+            //Displays the new question
+            Final Fi = new Final();
+            Fi.Show();
         }
 
         private void Question5_Load(object sender, EventArgs e)
@@ -29,30 +35,42 @@ namespace Software_development_Assignment_quiz
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            //When submit button is clicked textbox and submit button are disabled
             txtBoxEntry.Enabled = false;
             btnSubmit.Enabled = false;
 
+
+            //These if and if else statements are used to show the user got the answer correct 
             if (txtBoxEntry.Text.Contains("Lympstone"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
+                //Adds 1 to the score
+                score.currentScore += 1;
             }
 
 
             else if (txtBoxEntry.Text.Contains("lympstone"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
+                //Adds 1 to the score
+                score.currentScore += 1;
             }
 
             else if (txtBoxEntry.Text.Contains("Lympstone Commando"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
+                //Adds 1 to the score
+                score.currentScore += 1;
             }
 
             else if (txtBoxEntry.Text.Contains("lympstone commando"))
             {
                 lblCorrectOrWrongEntry.Text = "The answer is correct";
+                //Adds 1 to the score
+                score.currentScore += 1;
             }
 
+            //The else is used if the user entered te incorrect answer
             else
             {
                 lblCorrectOrWrongEntry.Text = "The answer is wrong";
@@ -60,6 +78,11 @@ namespace Software_development_Assignment_quiz
         }
 
         private void txtBoxEntry_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbScore_Click(object sender, EventArgs e)
         {
 
         }

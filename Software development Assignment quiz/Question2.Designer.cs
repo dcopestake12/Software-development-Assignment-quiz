@@ -50,12 +50,13 @@
             txtBoxEntry.Name = "txtBoxEntry";
             txtBoxEntry.Size = new Size(218, 23);
             txtBoxEntry.TabIndex = 1;
+            txtBoxEntry.TextChanged += txtBoxEntry_TextChanged;
             // 
             // btnSubmit
             // 
             btnSubmit.Location = new Point(565, 171);
             btnSubmit.Name = "btnSubmit";
-            btnSubmit.Size = new Size(75, 23);
+            btnSubmit.Size = new Size(80, 32);
             btnSubmit.TabIndex = 2;
             btnSubmit.Text = "submit";
             btnSubmit.UseVisualStyleBackColor = true;
