@@ -20,7 +20,9 @@ namespace Software_development_Assignment_quiz
 
         private void btnQuestion3_Click(object sender, EventArgs e)
         {
+            //Hides the current form thats open so it is not visible
             this.Hide();
+            //Displays question 4
             Question4 Q4 = new Question4();
             Q4.Show();
         }
@@ -32,8 +34,9 @@ namespace Software_development_Assignment_quiz
 
         private void btnOption4_Click(object sender, EventArgs e)
         {
-            lblCorrectOrWrong.Show();
+            //Displays a message in the label saying the answer is wrong when button is clicked
             lblCorrectOrWrong.Text = "The answer is wrong.";
+            //This disables all buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
             btnOption3.Enabled = false;
@@ -42,8 +45,9 @@ namespace Software_development_Assignment_quiz
 
         private void btnOption3_Click(object sender, EventArgs e)
         {
-            lblCorrectOrWrong.Show();
-            lblCorrectOrWrong.Text = "The answer is Correct.";
+            //Displays a message in the label saying the answer is wrong when button clicked
+            lblCorrectOrWrong.Text = "The answer is correct.";
+            //This disables all buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
             btnOption3.Enabled = false;
@@ -55,8 +59,9 @@ namespace Software_development_Assignment_quiz
 
         private void btnOption2_Click(object sender, EventArgs e)
         {
-            lblCorrectOrWrong.Show();
+            //Displays a message in the label saying the answer is wrong when button clicked
             lblCorrectOrWrong.Text = "The answer is wrong.";
+            //This disables all buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
             btnOption3.Enabled = false;
@@ -65,8 +70,9 @@ namespace Software_development_Assignment_quiz
 
         private void btnOption1_Click(object sender, EventArgs e)
         {
-            lblCorrectOrWrong.Show();
+            //Displays a message in the label saying the answer is wrong when button clicked
             lblCorrectOrWrong.Text = "The answer is wrong.";
+            //This disables all buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
             btnOption3.Enabled = false;

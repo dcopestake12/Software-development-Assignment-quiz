@@ -20,36 +20,42 @@ namespace Software_development_Assignment_quiz
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            //When submit button is clicked textbox and submit button are disabled
+            txtBoxEntry.Enabled = false;
+            btnSubmit.Enabled = false;
 
             //These if and if else statements are used to show the user got the answer correct   
             if (txtBoxEntry.Text.Contains("Grant Shapps"))
             {
-                lblCorrectOrWrong.Text = "The answer is correct";
+                lblCorrectOrWrong.Text = "The answer is correct.";
+                //Adds 1 to the score
                 score.currentScore += 1;
             }
 
 
             else if (txtBoxEntry.Text.Contains("grant shapps"))
             {
-                lblCorrectOrWrong.Text = "The answer is correct";
+                lblCorrectOrWrong.Text = "The answer is correct.";
                 score.currentScore += 1;
             }
 
             else if (txtBoxEntry.Text.Contains("grantshapps"))
             {
-                lblCorrectOrWrong.Text = "The answer is correct";
+                lblCorrectOrWrong.Text = "The answer is correct.";
                 score.currentScore += 1;
             }
             // The else is used if the user enters the incorrect answer
             else
             {
-                lblCorrectOrWrong.Text = "The answer is wrong";
+                lblCorrectOrWrong.Text = "The answer is wrong.";
             }
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            this.Close();
+            //Hides the current form thats open so it is not visible
+            this.Hide();
+            //Displays question 3
             Question3 Q3 = new Question3();
             Q3.Show();
         }

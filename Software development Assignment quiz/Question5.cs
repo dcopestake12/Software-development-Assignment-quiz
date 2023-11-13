@@ -21,9 +21,9 @@ namespace Software_development_Assignment_quiz
         private void btnQuestion5_Click(object sender, EventArgs e)
         {
 
-            // Closes the current form thats open
+            //Hides the current form thats open so it is not visible
             this.Hide();
-            //Displays the new question
+            //Displays the last final form
             Final Fi = new Final();
             Fi.Show();
         }
@@ -70,7 +70,7 @@ namespace Software_development_Assignment_quiz
                 score.currentScore += 1;
             }
 
-            //The else is used if the user entered te incorrect answer
+            //The else is used if the user entered the wrong answer
             else
             {
                 lblCorrectOrWrongEntry.Text = "The answer is wrong";

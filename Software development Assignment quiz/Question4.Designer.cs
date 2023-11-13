@@ -40,11 +40,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(313, 82);
+            label1.Location = new Point(283, 82);
             label1.Name = "label1";
-            label1.Size = new Size(161, 15);
+            label1.Size = new Size(336, 15);
             label1.TabIndex = 0;
-            label1.Text = "What is a draft in the milatry?";
+            label1.Text = "Select the option that contains the definition of a milatry draft.";
             // 
             // btnQuestion4
             // 

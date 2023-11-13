@@ -32,7 +32,7 @@
             btnOption2 = new Button();
             btnOption3 = new Button();
             btnOption4 = new Button();
-            label1 = new Label();
+            lblQuestion = new Label();
             btnQuestion1 = new Button();
             lblCorrectOrWrong = new Label();
             SuspendLayout();
@@ -77,15 +77,15 @@
             btnOption4.UseVisualStyleBackColor = true;
             btnOption4.Click += btnOption4_Click;
             // 
-            // label1
+            // lblQuestion
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(332, 121);
-            label1.Name = "label1";
-            label1.Size = new Size(203, 15);
-            label1.TabIndex = 4;
-            label1.Text = "When waws the british army formed?";
-            label1.Click += label1_Click;
+            lblQuestion.AutoSize = true;
+            lblQuestion.Location = new Point(267, 109);
+            lblQuestion.Name = "lblQuestion";
+            lblQuestion.Size = new Size(328, 15);
+            lblQuestion.TabIndex = 4;
+            lblQuestion.Text = "Select the option for which year the british army was formed.";
+            lblQuestion.Click += label1_Click;
             // 
             // btnQuestion1
             // 
@@ -112,7 +112,7 @@
             ClientSize = new Size(800, 532);
             Controls.Add(lblCorrectOrWrong);
             Controls.Add(btnQuestion1);
-            Controls.Add(label1);
+            Controls.Add(lblQuestion);
             Controls.Add(btnOption4);
             Controls.Add(btnOption3);
             Controls.Add(btnOption2);
@@ -130,7 +130,7 @@
         private Button btnOption2;
         private Button btnOption3;
         private Button btnOption4;
-        private Label label1;
+        private Label lblQuestion;
         private Button btnQuestion1;
         private Label lblCorrectOrWrong;
     }

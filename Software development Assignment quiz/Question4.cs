@@ -20,9 +20,9 @@ namespace Software_development_Assignment_quiz
 
         private void btnQuestion4_Click(object sender, EventArgs e)
         {
-            // Closes the current form thats open
+            //Hides the current form thats open so it is not visible
             this.Hide();
-            //Displays the new question
+            //Displays question 5
             Question5 Q5 = new Question5();
             Q5.Show();
         }
@@ -35,8 +35,7 @@ namespace Software_development_Assignment_quiz
         private void btnOption3_Click(object sender, EventArgs e)
         {
             //The label shows that the answer is incorrect if the user clicks the button
-            lblCorrectOrWrong.Show();
-            lblCorrectOrWrong.Text = "The answer is incorrect.";
+            lblCorrectOrWrong.Text = "The answer is wrong.";
             //Disables all other buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
@@ -47,8 +46,7 @@ namespace Software_development_Assignment_quiz
         private void btnOption4_Click(object sender, EventArgs e)
         {
             //The label shows that the answer is incorrect if the user clicks the button
-            lblCorrectOrWrong.Show();
-            lblCorrectOrWrong.Text = "The answer is incorrect.";
+            lblCorrectOrWrong.Text = "The answer is wrong.";
             //Disables all other buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
@@ -59,8 +57,7 @@ namespace Software_development_Assignment_quiz
         private void btnOption1_Click(object sender, EventArgs e)
         {
             //The label shows that the answer is incorrect if the user clicks the button
-            lblCorrectOrWrong.Show();
-            lblCorrectOrWrong.Text = "The answer is incorrect.";
+            lblCorrectOrWrong.Text = "The answer is wrong.";
             //Disables all other buttons when the button is clicked
             btnOption1.Enabled = false;
             btnOption2.Enabled = false;
@@ -71,7 +68,6 @@ namespace Software_development_Assignment_quiz
         private void btnOption2_Click(object sender, EventArgs e)
         {
             //The label shows that the answer is correct if the user clicks the button
-            lblCorrectOrWrong.Show();
             lblCorrectOrWrong.Text = "The answer is correct.";
             //Disables all other buttons when the button is clicked
             btnOption1.Enabled = false;

@@ -85,9 +85,9 @@
             lblQuestion.AutoSize = true;
             lblQuestion.Location = new Point(212, 112);
             lblQuestion.Name = "lblQuestion";
-            lblQuestion.Size = new Size(358, 15);
+            lblQuestion.Size = new Size(344, 15);
             lblQuestion.TabIndex = 5;
-            lblQuestion.Text = "What is the name of the milatry base located in Devon near Exeter?";
+            lblQuestion.Text = "Enter the name of the milatry base located in Devon near Exeter.";
             // 
             // Question5
             // 

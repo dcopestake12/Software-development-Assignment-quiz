@@ -38,11 +38,11 @@
             // lblQuestion
             // 
             lblQuestion.AutoSize = true;
-            lblQuestion.Location = new Point(289, 111);
+            lblQuestion.Location = new Point(223, 110);
             lblQuestion.Name = "lblQuestion";
-            lblQuestion.Size = new Size(218, 15);
+            lblQuestion.Size = new Size(445, 15);
             lblQuestion.TabIndex = 0;
-            lblQuestion.Text = "Who is the current minister of deffence?";
+            lblQuestion.Text = "Enter the name of the person who is currently Minister of Defence as of 13/11/2023.";
             // 
             // txtBoxEntry
             // 
